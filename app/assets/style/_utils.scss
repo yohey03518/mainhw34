@@ -2,6 +2,10 @@
   color: $color-white;
 }
 
+.bg-main {
+  background-color: $color-main;
+}
+
 .flex {
   display: flex;
 }
@@ -17,7 +21,9 @@
 .w-80 {
   width: 80px;
 }
-
+.h-80 {
+  height: 80px;
+}
 .py-25{
 padding-top: 25px; 
 padding-bottom: 25px;
