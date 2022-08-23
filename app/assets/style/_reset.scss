@@ -136,7 +136,7 @@ table {
 
 img {
   vertical-align: bottom;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -146,3 +146,7 @@ img {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: initial;
+}

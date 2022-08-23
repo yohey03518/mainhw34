@@ -1,0 +1,24 @@
+.white, .white * {
+  color: $color-white;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-sb {
+  justify-content: space-between;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.w-80 {
+  width: 80px;
+}
+
+.py-25{
+padding-top: 25px; 
+padding-bottom: 25px;
+}
