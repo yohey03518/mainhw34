@@ -1,0 +1,63 @@
+.banner {
+  background-image: url(../images/home-header.png);
+  background-size: cover;
+}
+
+.banner .desc {
+  font-size: 36px;
+  line-height: 54px;
+  color: $color-title;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 96px;
+  border: none;
+  color: $color-title;
+  margin-bottom: 4px;
+}
+
+.btn-buynow {
+  padding: 5px 11px;
+  font-weight: 500;
+  background-color: $color-main; 
+  color: $color-white;
+  border: 1px solid $color-main;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 296px;
+  padding-bottom: 296px;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    background-image: url(../images/home-header-sm.png);
+  }
+
+}
+
+@media (max-width: 767px) {
+  .banner .container {
+    padding-right: 14px;
+    padding-top: 144px;
+    padding-bottom: 144px;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 8px;
+  }
+  .banner .desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .btn-buynow {
+    padding: 4px 11px 4px 11px;
+  }
+}
