@@ -415,13 +415,16 @@ h1 {
   line-height: 96px;
   border: none;
   color: #650300;
-  margin-bottom: 10px; }
+  margin-bottom: 4px; }
 
 .btn-buynow {
+  padding: 5px 11px;
   font-weight: 500;
   background-color: #AA0601;
   color: #ffffff;
-  border: 1px solid #AA0601; }
+  border: 1px solid #AA0601;
+  font-size: 20px;
+  line-height: 30px; }
 
 .banner .container {
   display: -webkit-box;
@@ -436,6 +439,25 @@ h1 {
           align-items: flex-end;
   padding-top: 296px;
   padding-bottom: 296px; }
+
+@media (max-width: 992px) {
+  .banner {
+    background-image: url(../images/home-header-sm.png); } }
+
+@media (max-width: 767px) {
+  .banner .container {
+    padding-right: 14px;
+    padding-top: 144px;
+    padding-bottom: 144px; }
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 8px; }
+  .banner .desc {
+    font-size: 16px;
+    line-height: 24px; }
+  .btn-buynow {
+    padding: 4px 11px 4px 11px; } }
 
 .questions {
   padding-top: 96px;
