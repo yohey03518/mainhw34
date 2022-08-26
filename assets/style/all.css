@@ -143,7 +143,7 @@ a {
   text-decoration: none;
   color: initial; }
 
-body {
+body, button {
   font-family: 'Roboto', 'Noto Sans TC', sans-serif; }
 
 .font-tw {
@@ -234,11 +234,12 @@ body {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    gap: 64px; }
     .header .nav a {
       font-size: 20px;
       line-height: 30px;
-      padding: 25px 32px; }
+      padding: 25px 0px; }
 
 .footer .menu {
   padding-top: 48px;
@@ -329,7 +330,8 @@ h1 {
     .header .nav {
       width: 100%;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+      gap: 0px; }
       .header .nav li {
         width: 50%;
         border: 1px solid #ffffff;
@@ -398,6 +400,42 @@ h1 {
       line-height: 24px; }
     .copyright .links:first-child {
       margin-top: 8px; } }
+
+.banner {
+  background-image: url(../images/home-header.png);
+  background-size: cover; }
+
+.banner .desc {
+  font-size: 36px;
+  line-height: 54px;
+  color: #650300; }
+
+h1 {
+  font-size: 64px;
+  line-height: 96px;
+  border: none;
+  color: #650300;
+  margin-bottom: 10px; }
+
+.btn-buynow {
+  font-weight: 500;
+  background-color: #AA0601;
+  color: #ffffff;
+  border: 1px solid #AA0601; }
+
+.banner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 296px;
+  padding-bottom: 296px; }
 
 .questions {
   padding-top: 96px;
