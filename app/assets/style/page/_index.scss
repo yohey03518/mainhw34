@@ -20,7 +20,7 @@ h1 {
 .btn-buynow {
   padding: 5px 11px;
   font-weight: 500;
-  background-color: $color-main; 
+  background-color: $color-main;
   color: $color-white;
   border: 1px solid $color-main;
   font-size: 20px;
@@ -35,29 +35,112 @@ h1 {
   padding-bottom: 296px;
 }
 
+.pro {
+  background-color: $color-light;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 24px;
+  }
+
+  h2 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 700;
+    color: $color-title;
+  }
+}
+
+.pro-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+
+  .pro-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .pro-logo {
+      max-width: 100px;
+    }
+
+    width: 22%;
+
+    h3 {
+      margin-top: 16px;
+      margin-bottom: 8px;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 700;
+      color: $color-title;
+    }
+
+    .desc {
+      line-height: 24px;
+    }
+  }
+}
+
 @media (max-width: 992px) {
+  .container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
   .banner {
     background-image: url(../images/home-header-sm.png);
+  }
+
+  .pro-content {
+    .pro-item {
+      width: 47%;
+    }
   }
 
 }
 
 @media (max-width: 767px) {
+  .container {
+   padding-left: 14px; 
+   padding-right: 14px;
+  }
   .banner .container {
-    padding-right: 14px;
     padding-top: 144px;
     padding-bottom: 144px;
   }
+
   h1 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 8px;
   }
+
   .banner .desc {
     font-size: 16px;
     line-height: 24px;
   }
+
   .btn-buynow {
     padding: 4px 11px 4px 11px;
+  }
+
+  .pro {
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .pro-item {
+      width: 100%;
+    }
   }
 }
