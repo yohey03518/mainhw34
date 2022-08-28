@@ -196,6 +196,14 @@ h1 {
       }
     }
   }
+
+  .coop {
+    background-image: url("../images/index-bg-md.png");
+    .coop-list {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -246,10 +254,16 @@ h1 {
       padding-bottom: 40px;
       gap: 24px;
     }
-
-    h2 {
-      font-size: 24px;
-      line-height: 36px;
+  }
+  .coop {
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      gap: 24px;
     }
+    .sm {
+      display: initial;
+    }
+    .lg{display: none;}
   }
 }
