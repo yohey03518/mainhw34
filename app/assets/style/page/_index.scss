@@ -73,7 +73,7 @@ h1 {
       max-width: 100px;
     }
 
-    width: 22%;
+    width: calc(25% - 18px);
 
     h3 {
       margin-top: 16px;
@@ -87,6 +87,46 @@ h1 {
     .desc {
       line-height: 24px;
     }
+  }
+}
+
+.classic {
+  .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  h2 {
+    color: $color-title;
+  }
+
+  .classic-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .classic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    img {
+      max-width: 416px;
+    }
+  }
+
+  h3 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    font-style: italic;
+    color: $color-main;
   }
 }
 
@@ -105,6 +145,20 @@ h1 {
       width: 47%;
     }
   }
+
+  .classic {
+    .classic-list {
+      flex-wrap: wrap;
+    }
+
+    .classic-item {
+      width: 100%;
+
+      img {
+        max-width: 336px;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -112,11 +166,12 @@ h1 {
     font-size: 24px;
     line-height: 36px;
   }
-  
+
   .container {
-   padding-left: 14px; 
-   padding-right: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
+
   .banner .container {
     padding-top: 144px;
     padding-bottom: 144px;
@@ -145,6 +200,17 @@ h1 {
 
     .pro-item {
       width: 100%;
+    }
+  }
+  .classic {
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      gap: 24px;
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 36px;
     }
   }
 }
