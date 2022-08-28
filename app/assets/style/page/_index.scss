@@ -1,3 +1,9 @@
+.index h2 {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+}
+
 .banner {
   background-image: url(../images/home-header.png);
   background-size: cover;
@@ -48,9 +54,6 @@ h1 {
   }
 
   h2 {
-    font-size: 48px;
-    line-height: 72px;
-    font-weight: 700;
     color: $color-title;
   }
 }
@@ -102,10 +105,14 @@ h1 {
       width: 47%;
     }
   }
-
 }
 
 @media (max-width: 767px) {
+  .index h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
   .container {
    padding-left: 14px; 
    padding-right: 14px;
@@ -135,10 +142,7 @@ h1 {
       padding-top: 40px;
       padding-bottom: 40px;
     }
-    h2 {
-      font-size: 24px;
-      line-height: 36px;
-    }
+
     .pro-item {
       width: 100%;
     }
