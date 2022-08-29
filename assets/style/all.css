@@ -128,8 +128,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+img, textarea {
+  vertical-align: bottom; }
+
 img {
-  vertical-align: bottom;
   max-width: 100%;
   height: auto; }
 
@@ -603,6 +605,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 24px; }
 
 .recommend .item {
@@ -626,10 +631,65 @@ h1 {
 
 .contact-us {
   background-color: #FBF2F2; }
-  .contact-us .container {
-    max-width: 636px; }
   .contact-us h2 {
     color: #650300; }
+  .contact-us .form-desc {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 24px; }
+  .contact-us .container {
+    max-width: 660px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 48px;
+    padding-top: 80px;
+    padding-bottom: 80px; }
+  .contact-us .inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .contact-us .contact-form {
+    width: 100%; }
+    .contact-us .contact-form label {
+      line-height: 24px;
+      display: block;
+      margin-bottom: 8px; }
+    .contact-us .contact-form .text {
+      width: 100%;
+      line-height: 24px;
+      border: 1px solid black; }
+    .contact-us .contact-form .name .text {
+      height: 36px; }
+    .contact-us .contact-form .tel .text, .contact-us .contact-form .email .text {
+      height: 33px; }
+  .contact-us .opinion .text {
+    height: 136px; }
+  .contact-us .send {
+    border: none;
+    background-color: #AA0601;
+    color: #ffffff;
+    width: 416px;
+    height: 56px;
+    line-height: 24px;
+    font-weight: 700; }
+    .contact-us .send:hover {
+      background-color: #650300; }
+  .contact-us .privacy .desc {
+    display: inline-block;
+    line-height: 24px; }
 
 @media (max-width: 992px) {
   .container {
@@ -658,7 +718,14 @@ h1 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .recommend .item {
-    width: calc(50% - 24px); } }
+    width: calc(50% - 24px); }
+  .contact-us .container {
+    gap: 24px; }
+  .contact-us .form-desc {
+    font-size: 16px;
+    line-height: 24px; }
+  .contact-us .send {
+    margin-top: 24px; } }
 
 @media (max-width: 767px) {
   .index h2 {
@@ -701,7 +768,22 @@ h1 {
     padding-bottom: 40px;
     gap: 24px; }
   .recommend .item {
-    width: 100%; } }
+    width: 100%;
+    max-width: 612px; }
+  .contact-us .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 24px; }
+  .contact-us .privacy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
+  .contact-us .send {
+    width: 100%;
+    margin-top: 0; } }
 
 .questions {
   padding-top: 96px;
