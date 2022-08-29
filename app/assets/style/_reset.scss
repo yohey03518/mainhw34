@@ -134,8 +134,11 @@ table {
   border-spacing: 0;
 }
 
-img {
+img, textarea {
   vertical-align: bottom;
+}
+
+img {
   max-width: 100%;
   height: auto;
 }
