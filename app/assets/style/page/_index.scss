@@ -183,6 +183,7 @@ h1 {
 
   .list {
     display: flex;
+    justify-content: center;
     gap: 24px;
   }
 
@@ -420,6 +421,7 @@ h1 {
     }
     .item {
       width: 100%;
+      max-width: 612px;
     }
   }
   .contact-us {
