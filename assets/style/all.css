@@ -410,7 +410,8 @@ h1 {
 
 .banner {
   background-image: url(../images/home-header.png);
-  background-size: cover; }
+  background-size: cover;
+  height: 788px; }
 
 .banner .desc {
   font-size: 36px;
@@ -434,6 +435,7 @@ h1 {
   line-height: 30px; }
 
 .banner .container {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,8 +446,9 @@ h1 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-top: 296px;
-  padding-bottom: 296px; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .pro {
   background-color: #FBF2F2; }
@@ -538,8 +541,6 @@ h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px; }
-  .classic .classic-item img {
-    max-width: 416px; }
 
 .classic h3 {
   font-weight: 900;
@@ -704,8 +705,6 @@ h1 {
         flex-wrap: wrap; }
   .classic .classic-item {
     width: 100%; }
-    .classic .classic-item img {
-      max-width: 336px; }
   .coop {
     background-image: url("../images/index-bg-md.png"); }
     .coop .coop-list {
@@ -731,19 +730,18 @@ h1 {
   .index h2 {
     font-size: 24px;
     line-height: 36px; }
+  .banner {
+    height: 396px; }
+    .banner .desc {
+      font-size: 16px;
+      line-height: 24px; }
   .container {
     padding-left: 14px;
     padding-right: 14px; }
-  .banner .container {
-    padding-top: 144px;
-    padding-bottom: 144px; }
   h1 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 8px; }
-  .banner .desc {
-    font-size: 16px;
-    line-height: 24px; }
   .btn-buynow {
     padding: 4px 11px 4px 11px; }
   .pro .container {
