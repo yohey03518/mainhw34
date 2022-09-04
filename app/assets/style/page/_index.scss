@@ -32,6 +32,9 @@
   border: 1px solid $color-main;
   font-size: 20px;
   line-height: 30px;
+  &:hover {
+    background-color: $color-title;
+  }
 }
 
 .banner .container {
