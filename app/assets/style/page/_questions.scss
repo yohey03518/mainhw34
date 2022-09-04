@@ -1,6 +1,11 @@
 .questions {
   padding-top: 96px;
   padding-bottom: 80px;
+
+  .subtitle {
+    margin-top: 43px;
+    margin-bottom: 24px;
+  }
 }
 
 .question-list {
@@ -10,13 +15,22 @@
   li {
     max-width: 856px;
   }
-
 }
 
 
 @media (max-width: 767px) {
   .questions {
-    padding-left: 13px;
-    padding-right: 14px;
+    padding-top: 40px;
+    padding-bottom: 64px;
+
+    .container {
+      padding-left: 13px;
+      padding-right: 14px;
+    }
+
+    .subtitle {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
   }
 }
