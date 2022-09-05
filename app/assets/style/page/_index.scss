@@ -8,12 +8,11 @@
   background-image: url(../images/home-header.png);
   background-size: cover;
   height: 788px;
-}
-
-.banner .desc {
-  font-size: 36px;
-  line-height: 54px;
-  color: $color-title;
+  .desc {
+    font-size: 36px;
+    line-height: 54px;
+    color: $color-title;
+  }
   h1 {
     font-size: 64px;
     line-height: 96px;
@@ -22,7 +21,6 @@
     margin-bottom: 4px;
   }
 }
-
 
 .btn-buynow {
   padding: 5px 11px;
