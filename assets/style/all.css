@@ -414,12 +414,11 @@ h1 {
   background-image: url(../images/home-header.png);
   background-size: cover;
   height: 788px; }
-
-.banner .desc {
-  font-size: 36px;
-  line-height: 54px;
-  color: #650300; }
-  .banner .desc h1 {
+  .banner .desc {
+    font-size: 36px;
+    line-height: 54px;
+    color: #650300; }
+  .banner h1 {
     font-size: 64px;
     line-height: 96px;
     border: none;
